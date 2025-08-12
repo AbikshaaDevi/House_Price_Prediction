@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>House Price Predictor</title>
+</head>
+<body style="background-color: #d3e0ea; font-family: sans-serif;">
+
+    <h2 style="text-align: center; font-size: 28px; margin-top: 30px;">House Price Prediction</h2>
+
+    <div style="width: 400px; margin: auto; background-color: rgb(160, 183, 233); padding: 25px; border-radius: 10px; font-size: 18px;">
+        <form action="/predict" method="post">
+
+            <label>Area (sqft):</label><br>
+            <input type="number" name="area" required><br><br>
+
+            <label>Bedrooms:</label><br>
+            <input type="number" name="bedrooms" required><br><br>
+
+            <label>Bathrooms:</label><br>
+            <input type="number" name="bathrooms" required><br><br>
+
+            <label>Stories:</label><br>
+            <input type="number" name="stories" required><br><br>
+
+            <label>Parking:</label><br>
+            <input type="number" name="parking" required><br><br>
+
+            <label>Main Road:</label><br>
+            <select name="mainroad">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select><br><br>
+
+            <label>Air Conditioning:</label><br>
+            <select name="airconditioning">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select><br><br>
+
+            <button type="submit" style="font-size: 16px;">Predict</button>
+        </form>
+    </div>
+
+</body>
+</html>
